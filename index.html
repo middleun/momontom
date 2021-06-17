@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>momontom</title>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+</head>
+<body>
+    
+    <!-- wrap of all contents -->
+    <div class="wrap">
+
+        <div class="left-side">
+            <div class="weather-sec">
+                <img class="weather-icon" src="" alt="weather icon">
+                <span></span>
+                <span></span>            
+            </div>
+            <!-- clock section -->
+            <div class="clock-sec section">
+                <h1 class="clock-day">today is</h1>
+                <h1 class="clock-time">00:00</h1>
+            </div>
+    
+            <!-- welcome section -->
+            <div class="welcome-sec section">
+                <form class="welcome-form">
+                    <input type="text" class="welcome-input input" placeholder="write your name">
+                </form>
+                <h2 class="welcome-text"></h2>
+            </div>
+        </div>
+        <div class="right-side">
+            <!-- random quotes section -->
+            <div class="quotes-sec section">
+                <span class="quote"></span>
+                <span class="movie"></span>
+            </div>
+            <!-- to do list section -->
+            <div class="to-do-sec section">
+                <form class="to-do-form">
+                    <input type="text" class="to-do-input input" placeholder="enter things to do today">
+                </form>
+                <div class="to-do-list clear">
+                    <div class="ongoing">
+                        <h3>Ongoing</h3>
+                        <ul class="ongoing-list"></ul>
+                    </div>
+                    <div class="finished">
+                        <h3>Finished</h3>
+                        <ul class="finished-list"></ul>
+                    </div>
+                </div>                
+            </div>
+        </div>              
+    </div>
+
+    <!-- javascript link -->
+    <script>
+        document.cookie = 'cookie2=value2; SameSite=None; Secure';
+    </script>
+    <script src="js/clock.js"></script>
+    <script src="js/welcome.js"></script>
+    <script src="js/to_do.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
