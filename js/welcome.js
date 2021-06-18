@@ -6,8 +6,8 @@ const welcomeInput = welcomeForm.querySelector(".welcome-input");
 const toDoSection = document.querySelector(".to-do-sec");
 
 const wrap = document.querySelector(".wrap");
-const leftSection = wrap.querySelector(".left-side");
-const rightSection = wrap.querySelector(".right-side");
+const leftSide = wrap.querySelector(".left-side");
+const rightSide = wrap.querySelector(".right-side");
 // console.log(welcomeInput.value);
 const USER_KEY = "currentUser"
 
@@ -28,12 +28,18 @@ function submitForm(e){
     e.preventDefault();
     const userValue = welcomeInput.value;
     // console.log(userValue);
-    showWelcome(userValue);
-    saveName(userValue);
-    rightSection.classList.add("show");
-    wrap.style.justifyContent = "space-between";
-    leftSection.style.width = "44.9%";
-    rightSection.style.width = "54.9%";
+
+    if(userValue === ""){
+        alert("please WRITE your name!")
+    }else{
+        showWelcome(userValue);
+        saveName(userValue);
+        rightSide.classList.add("show");
+        wrap.style.justifyContent = "space-between";
+        leftSide.style.width = "44.9%";
+        rightSide.style.width = "54.9%";
+    }
+    
 }
 
 // ask for name when currentuser isn't
@@ -50,10 +56,10 @@ function loadName(){
     }else{
         showWelcome(currentUser);
        
-        rightSection.classList.add("show");
+        rightSide.classList.add("show");
         wrap.style.justifyContent = "space-between";
-        leftSection.style.width = "44.9%";
-        rightSection.style.width = "54.9%";
+        leftSide.style.width = "44.9%";
+        rightSide.style.width = "54.9%";
     }
 }
 
