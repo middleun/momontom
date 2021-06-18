@@ -28,7 +28,7 @@
 - Weather API : [Сurrent weather and forecast - OpenWeatherMap](https://openweathermap.org/)
 
 ### To Do
-* [ ] user name input 빈칸일 때 alert 
+* [x] user name input 빈칸일 때 alert 
 * [ ] reset 버튼 추가 
 * [ ] 초기화 후 askCoords 점검
 * [ ] 반응형 
